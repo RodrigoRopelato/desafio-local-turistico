@@ -10,79 +10,72 @@
 
 #page {
   box-sizing: border-box;
-  padding: 88px 80px 48px;
+  padding: 4rem 1rem 2rem;
   margin: auto;
 }
 
 h4{
   text-transform: uppercase;
-  font-size: 16px;
+  font-size: 15px;
   color: #E1624F;
   font-weight: 700;
 }
 
 h1 {
-  margin-top: 8px;
-  font-size: 36px;
+  margin-top: 5px;
+  font-size: 28px;
   color: #1B1B1B;
   font-weight: 700;
 }
 
-
 main {
   margin: auto;
-  width: 1120px;
-  img {
+  & img {
     width: 100%;
-    border-radius: 28px;
+    border-radius: 1.75rem;
   }
 }
 
 #description{
-  img{
-    margin-bottom: 24px;
+  & img{
+    margin-bottom: 1.5rem;
   }
-  p{
+  & p{
     font-style: italic;
     text-align: center;
   }
 }
 
 #description, #titlePage {
-  margin-bottom: 40px;
+  margin-bottom: 2rem;
 }
 
 #content{
   border-top: solid #D9D9D9 1px;
   border-bottom: solid #D9D9D9 1px; 
-  padding: 64px 0px 40px;
+  padding:2rem 0 1rem;
 }
 
 #titleContent{
-  margin-bottom: 64px;
-  h2{
-    font-size: 32px;
+  & h2{
+    font-size: 24px;
     margin: 2px 0px 8px;
   }
 }
 
 .imagem{
-  display: flex;
-  align-items: center;
-  height: 350px;
-  border-radius: 28px;
-  overflow: hidden;
-  margin-bottom: 20px;
-  margin-top: 48px;
-  img{
+  margin-top: 2.75rem;
+  & > img{
     object-fit: cover;  
+    border-radius:1rem;
+    height: 15rem;
   }
 }
 
 h3{
-  font-size: 28px;
-  margin-bottom: 4px;
-  padding-left: 5px;
+  font-size: 20px;
+  margin-block: .25rem .5rem;
+  padding-left: .25rem;
 }
 
 ul{
@@ -91,9 +84,14 @@ ul{
   color: #0C51A7;
 }
 
+strong{
+  display: block;
+  margin-top: .3rem;
+}
+
 .description{
   text-align: center;
-  margin: 40px 0px 65px;
+  margin: 2rem 0 2.5rem;
 }
 
 footer{
@@ -112,5 +110,69 @@ li + li {
 
 li + li +li{
   color:#E95E10;
+}
+
+@media (width >= 80em) {
+  #page {
+  box-sizing: border-box;
+  padding: 5.5rem 5rem 3rem;
+  margin: auto;
+}
+
+h4{
+  font-size: 1rem;
+}
+
+h1 {
+  margin-top: .5rem;
+  font-size: 2rem;
+}
+
+main {
+  margin: auto;
+  width: 70rem;
+}
+
+#description{
+  & img{
+    margin-bottom: 1.5rem;
+  }
+}
+
+#description, #titlePage {
+  margin-bottom: 2.5rem;
+}
+
+#content{
+  padding: 4rem 0 2.5rem;
+}
+
+#titleContent{
+  margin-bottom: 4rem;
+  h2{
+    font-size: 2rem;
+    margin: .125rem 0 .5rem;
+  }
+}
+
+.imagem{
+  margin-top: 2.75rem;
+  & > img{
+    object-fit: cover;  
+    border-radius:1rem;
+    height: 22rem;
+  }
+}
+
+h3{
+  font-size: 1.75rem;
+  margin-bottom: .25rem;
+  padding-left: .3rem;
+}
+
+.description{
+  margin: 2.5rem 0 4rem;
+}
+
 }
 
